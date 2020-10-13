@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 
 orbs:
   gravitee-dev-repos: orbinoid2/gravitee-dev-repos@0.0.1
