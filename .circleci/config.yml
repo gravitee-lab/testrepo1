@@ -17,11 +17,6 @@ jobs:
   build:
     docker:
       - image: "circleci/node:latest"
-    parameters:
-      to: 'Gravitee.io Team'
-        type: string
-        default: "World"
-        description: "Hello to whom?"
     steps:
       - checkout
       - run:
