@@ -17,12 +17,11 @@ jobs:
     docker:
       - image: "circleci/node:latest"
     environment:
-      - GREETING_TO_WHOM: << pipeline.parameters.g33io_to >>
+      - GREETING_TO_WHOM2: << pipeline.parameters.g33io_to >>
     steps:
       - checkout
       - g33io-dev-repos/greet
-          environment:
-            - GREETING_TO_WHOM: << pipeline.parameters.g33io_to >>
+          GREETING_TO_WHOM: << pipeline.parameters.g33io_to >>
       - run:
           name: install
           command: npm ci
