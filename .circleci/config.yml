@@ -11,6 +11,7 @@ commands:
         type: string
         default: "Gravitee.io Team"
     steps:
+      - checkout
       - gravitee-dev-repos/greet
 
 jobs:
