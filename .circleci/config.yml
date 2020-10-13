@@ -9,7 +9,7 @@ jobs:
       - image: "circleci/node:latest"
     steps:
       - checkout
-      - giodev/greet
+      - orbinoid2/greet
       - run:
           name: install
           command: npm ci
