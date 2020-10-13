@@ -15,11 +15,11 @@ jobs:
   build:
     docker:
       - image: "circleci/node:latest"
+    environment:
+      - PARAM_TO: "Gravitee.io Team!"
     steps:
       - checkout
       - g33io-dev-repos/greet
-          environment:
-            - PARAM_TO: "Gravitee.io Team!"
       - run:
           name: install
           command: npm ci
