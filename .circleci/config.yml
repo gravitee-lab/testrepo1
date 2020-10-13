@@ -18,7 +18,8 @@ jobs:
     steps:
       - checkout
       - g33io-dev-repos/greet
-          to: "Gravitee.io Team!"
+          environment:
+            - PARAM_TO: "Gravitee.io Team!"
       - run:
           name: install
           command: npm ci
