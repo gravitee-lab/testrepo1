@@ -9,6 +9,7 @@ jobs:
       - image: "circleci/node:latest"
     steps:
       - checkout
+      - ubitetorbi/greet
       - run:
           name: install
           command: npm ci
