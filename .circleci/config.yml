@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   # g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.1
-  g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.3
+  g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.2
 
 parameters:
   g33io_to:
@@ -16,14 +16,14 @@ jobs:
   build:
     docker:
       - image: "circleci/node:latest"
+    environment:
+      TO: "Gravitee.io Team!"
     steps:
       - checkout
       - g33io-dev-repos/greet
       - run:
           name: install
           command: npm ci
-          environment:
-            TO: "Gravitee.io Team!"
       - run:
           name: validate
           command: npm run validate
