@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  # g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.1
+  # g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.3
   g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.2
 
 parameters:
@@ -17,9 +17,11 @@ jobs:
     docker:
       - image: "circleci/node:latest"
     environment:
-      TO: "Gravitee.io Team!"
+      PARAM_TO: "Gravitee.io Team!"
     steps:
       - checkout
+      # So I will need to invoke this pipeline with a "to" parameter set to "The Great Gravitee Team!"
+      # to pass on the value to the orb command execution
       - g33io-dev-repos/greet
       - run:
           name: install
