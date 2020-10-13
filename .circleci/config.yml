@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  gio-dev-repos: orbinoid2/gravitee-dev-repos@0.0.1
+  g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.1
 
 jobs:
   build:
@@ -9,7 +9,7 @@ jobs:
       - image: "circleci/node:latest"
     steps:
       - checkout
-      - gio-dev-repos/greet
+      - g33io-dev-repos/greet
       - run:
           name: install
           command: npm ci
