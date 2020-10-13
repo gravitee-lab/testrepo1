@@ -19,8 +19,8 @@ jobs:
     steps:
       - checkout
       - g33io-dev-repos/greet
-        environment:
-          TO: << pipeline.parameters.g33io_to >>
+          environment:
+            TO: << pipeline.parameters.g33io_to >>
       - run:
           name: install
           command: npm ci
