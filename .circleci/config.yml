@@ -1,7 +1,7 @@
 version: 2
 
 orbs:
-  giodev: orbinoid2/gravitee-dev-repos@0.0.1
+  gravitee-dev-repos: orbinoid2/gravitee-dev-repos@0.0.1
 
 jobs:
   build:
@@ -9,7 +9,7 @@ jobs:
       - image: "circleci/node:latest"
     steps:
       - checkout
-      - orbinoid2/greet
+      - gravitee-dev-repos/greet
       - run:
           name: install
           command: npm ci
