@@ -3,6 +3,14 @@ version: 2.1
 orbs:
   g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.1
 
+parameters:
+  to:
+    type: string
+    # the [default:] clause is required : without it, a Circle CI error will occur
+    # default: none
+    # the [default:] clause must have a valid value : without a valid value, a Circle CI error will occur
+    default: "Gravitee.io Team!"
+
 jobs:
   build:
     docker:
