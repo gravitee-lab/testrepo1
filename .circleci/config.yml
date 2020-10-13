@@ -1,4 +1,8 @@
 version: 2
+
+orbs:
+  ubitetorbi: orbinoid/ubitetorbi@0.0.1
+
 jobs:
   build:
     docker:
