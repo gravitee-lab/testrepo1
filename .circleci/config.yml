@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   # g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.3
-  g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.2
+  g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.1
 
 parameters:
   g33io_to:
