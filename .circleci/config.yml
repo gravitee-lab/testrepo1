@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.4
+  gravit33io-devorbs: orbinoid2/gravitee-dev-repos@0.0.4
   # g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.1
 
 parameters:
@@ -27,7 +27,7 @@ jobs:
     steps:
       - checkout
       # Will welcome "Gravitee Mates" in the default Team (salesforce)
-      - g33io-dev-repos/greet:
+      - gravit33io-devorbs/greet:
           greet_to: "Gravitee Mates"
       # Will welcome Paul, Marc, and Jean in the devops Team
       - gravit33io-devorbs/greet:
@@ -56,7 +56,7 @@ workflows:
   hell0_workfl0w:
     jobs:
       # Job defined from the [orbinoid2/gravitee-dev-repos@0.0.4] Circle CI Orb
-      - g33io-dev-repos/hello-job:
+      - gravit33io-devorbs/hello-job:
           greet_to: "Titouan, Paul, Nicolas, Azize, David, Florent, Laurie, Rory"
           greet_team: "salesforce"
           context: cicd-orchestrator
