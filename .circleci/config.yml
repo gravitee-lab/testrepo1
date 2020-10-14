@@ -19,7 +19,7 @@ parameters:
     # default : 'latest' # we never ever use 'latest', but stable-latest
 
 jobs:
-  build:
+  oldschool:
     docker:
       - image: "circleci/node:latest"
     # environment:
@@ -47,9 +47,12 @@ jobs:
           name: release
           command: echo installing semantic-release && npx -p semantic-release@15 -c 'echo running semantic-release && semantic-release'
 
-
 workflows:
   version: 2.1
+  wflow_with_old_sch00l_job:
+    jobs:
+      - oldschool:
+          context: cicd-orchestrator
   hell0_workfl0w:
     jobs:
       # Job defined from the [orbinoid2/gravitee-dev-repos@0.0.4] Circle CI Orb
