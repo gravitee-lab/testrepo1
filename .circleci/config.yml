@@ -46,7 +46,14 @@ jobs:
       - run:
           name: release
           command: echo installing semantic-release && npx -p semantic-release@15 -c 'echo running semantic-release && semantic-release'
-  # Job defined from the [orbinoid2/gravitee-dev-repos@0.0.4] Circle CI Orb
-  g33io-dev-repos/hello-job:
-    greet_to: "Titouan, Paul, Nicolas, Azize, David, Florent, Laurie, Rory"
-    greet_team: "salesforce"
+
+
+workflows:
+  version: 2.1
+  hell0_workfl0w:
+    jobs:
+      # Job defined from the [orbinoid2/gravitee-dev-repos@0.0.4] Circle CI Orb
+      - g33io-dev-repos/hello-job:
+          greet_to: "Titouan, Paul, Nicolas, Azize, David, Florent, Laurie, Rory"
+          greet_team: "salesforce"
+          context: cicd-orchestrator
