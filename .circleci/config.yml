@@ -24,7 +24,7 @@ jobs:
       # to pass on the value to the orb command execution
       - g33io-dev-repos/greet
           environment:
-            PARAM_TO: GREETING_TO_WHOM
+            PARAM_TO: "Gravitee Team!!"
       - run:
           name: install
           command: npm ci
