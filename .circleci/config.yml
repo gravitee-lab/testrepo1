@@ -23,6 +23,7 @@ jobs:
       # So I will need to invoke this pipeline with a "to" parameter set to "The Great Gravitee Team!"
       # to pass on the value to the orb command execution
       - g33io-dev-repos/greet
+          to: "Gravitee Mates :) !!"
       - run:
           name: install
           command: npm ci
