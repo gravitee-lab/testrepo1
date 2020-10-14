@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   # gravit33io-devorbs: orbinoid2/gravitee-dev-repos@0.0.6
-  gravit33io-devorbs: orbinoid2/gravitee-dev-repos@latest
+  gravit33io-devorbs: orbinoid2/gravitee-dev-repos@0.0
 
   # g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.1
 
