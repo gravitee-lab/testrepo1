@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  gravit33io-devorbs: orbinoid2/gravitee-dev-repos@0.0.5
+  gravit33io-devorbs: orbinoid2/gravitee-dev-repos@0.0.6
   # g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.1
 
 parameters:
@@ -64,6 +64,6 @@ workflows:
     jobs:
       # Job defined from the [orbinoid2/gravitee-dev-repos@0.0.4] Circle CI Orb
       - gravit33io-devorbs/nodejs-job:
-          greet_to: "Titouan, Paul, Nicolas, Azize, David, Florent, Laurie, Rory"
-          greet_team: "salesforce"
+          greet_to: "Azize, David, Florent, Laurie, RoryTitouan, Paul, Nicolas, Pascale"
+          greet_team: "devops"
           context: cicd-orchestrator
