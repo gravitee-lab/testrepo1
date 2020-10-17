@@ -1,9 +1,9 @@
 version: 2.1
 
 orbs:
-  # gravit33io-devorbs: orbinoid2/gravitee-dev-repos@0.0.6
+  # Implicit 0.0.x latest 'x', e.g. 0.0.6
   gravit33io-devorbs: orbinoid2/gravitee-dev-repos@0.0
-
+  # gravitee: gravitee-io/gravitee@0.0
   # g33io-dev-repos: orbinoid2/gravitee-dev-repos@0.0.1
 
 parameters:
